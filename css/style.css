@@ -1,0 +1,56 @@
+/****************************************************************/
+/*        Style sheet for Buceando por el mundo web site        */
+/*        author: Barbara Colomer                               */
+/*        version: 1.0                                          */
+/*        comments: class project 2023-24                       */
+/****************************************************************/
+
+/*************************** estilo general *********************/
+
+* {box-sizing:border-box;}   /* con maquetación compleja SIEMPRE */
+
+body {margin:0;padding:0;   /* para desactivar el espacio de separación por defecto */
+      background-color: #023143;
+      font-family: textonormal;}
+
+#wrapper {background-color:#12A4C5;
+          width:100%;        /* ancho fijado al 100%  MOBILE FIRST */
+          margin:auto;}     /* centrado automático */
+button{}
+button:hover{}
+html{scroll-behavior: smooth;}/*esto suaviza todos las bajadas de scroll*/
+.title {padding-top: 6vh;}
+
+
+/*************************** nav  *********************/
+
+
+.fa-arrow-circle-up{
+      color: rgb(112, 107, 107);}
+
+
+/***************************   HERO SECTION *********************************/
+
+#hero {background-image: url(../img/paisaje-submarino1.jpg);
+      height:95vh;    /* el 100% del alto de la ventana del navegador */ 
+      background-size: cover;
+      background-position:center;
+      position:relative;  /**** contenedor relativo *****/}
+
+#hero button {background-color:#808080;
+            color:black;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding:15px ;
+            border:none;
+            border-radius: 10px;
+            position:absolute;    /******* contenido absoluto ******/
+            top:70%;
+            left:50%;
+              transform:translate(-50%,-50%); /*** lo traslado a la mitad de su tamaño **/ 
+}
+#hero button:hover {
+      background-color: black;
+      color: #808080;
+      border: 1px solid #808080;
+}
