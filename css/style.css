@@ -150,28 +150,30 @@ margin-bottom: 0%;
       font-weight: bolder;
       font-size: 2.2em;
       text-align: center;
+      padding-top: 3%;
 }
 #cursos {color: white;
       font-family: garamond;
       text-align: justify;
       font-size: 1.5em;
 background-color: #04425D;
+
 }
 #cursos h3{
       text-align: center;
 }
-.grid-4 {display:grid;
-         grid-template-columns: 100%;}  /**** MOBILE FIRST *******/
 
-
-/*estilo del video dentro de la card*/
 #cursos .container {
   position: relative;
   overflow: hidden;
   width: 100%;
-  
 }
-
+#cursos p{
+      padding: 2% 5%;
+}
+/* .grid-4 {display:grid;
+         grid-template-columns: 100%;}  /**** MOBILE FIRST *******/
+/*
 .card {
       border:1px solid gray;
       background-color: white;
@@ -180,12 +182,58 @@ background-color: #04425D;
       color: #04425D;
       margin: 3%;
 }
-.card:hover {box-shadow: 3px 3px 5px #808080;}
+
 .card img {width:100%;
 max-width: 100%;
 height: auto;
-border-radius: 5%;}
+border-radius: 5%;} */
 
+.card {color: #04425D;
+  border: 1px solid gray;
+  background-color: #B5E2DD;
+  border-radius: 3%;
+  padding: 2%; /* Reducir el relleno para permitir que el contenido tenga más espacio */
+  height: 100%; /* Altura fija para las tarjetas */
+  display: flex; /* Utilizar flexbox para el diseño interno */
+  flex-direction: column; /* Apilar elementos verticalmente */
+}
+
+.card img {
+  margin-top: 3%;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5%;
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1em;
+ 
+}
+.button-cursos{
+      background-color: #B5E2DD;
+      color: #04425D;
+      font-size: 0.8em;
+      border-radius: 15%;
+      border: none;
+      align-self: flex-end; /* Coloca el botón al final de la tarjeta */
+      margin-top: auto; /* Asegura que el botón esté pegado al final, sin importar la cantidad de contenido */
+      
+
+}     
+/* Ajustar grid o flexbox para la disposición de las tarjetas */
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Usar fracciones flexibles para las columnas */
+  gap: 5px; /* Espacio entre las tarjetas */
+}
+
+.card:hover {box-shadow: 3px 3px 5px #808080;}
 /******************** footer *****************************************/
 footer {background-color: #010D3D;
       color:white;}
@@ -268,14 +316,24 @@ footer a p:hover {
 /************** responsividad ****************************************/
 
 @media only screen and (width>650px){   /****** TABLET *********/
-      #wrapper {width:80%;}
-      .grid-4 {grid-template-columns:repeat(2, 1 fr);}
+      #wrapper {width:90%;}
+      .grid-4 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 2%;
+    margin: 2%;
+}
 }
 
 @media only screen and (width>900px){   /************* COMPUTER **********/
       .grid-2 {grid-template-columns:50% 50%;}
       .grid-3d {grid-template-columns: 25% 25% 50%;}
-      .grid-4 {grid-template-columns: repeat(4, 1 fr);}
+      .grid-4 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  
+    padding: 1%;
+}
       
      }
 /********responsive topnav de w3schools ***********/
