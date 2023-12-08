@@ -178,6 +178,7 @@ background-color: #04425D;
       border-radius: 5%;
       padding:4%;
       color: #04425D;
+      margin: 3%;
 }
 .card:hover {box-shadow: 3px 3px 5px #808080;}
 .card img {width:100%;
@@ -274,7 +275,7 @@ footer a p:hover {
 @media only screen and (width>900px){   /************* COMPUTER **********/
       .grid-2 {grid-template-columns:50% 50%;}
       .grid-3d {grid-template-columns: 25% 25% 50%;}
-      .grid-4 {grid-template-columns: repeat(4, 1 fr)%;}
+      .grid-4 {grid-template-columns: repeat(4, 1 fr);}
       
      }
 /********responsive topnav de w3schools ***********/
