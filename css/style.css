@@ -131,7 +131,8 @@ margin-bottom: 0%;
       color: #023b54;
       font-family: garamond;
       font-weight: bolder;
-      font-size: 2em;
+      font-size: 2.2em;
+      text-align: center;
 }
 #centro p {
       font-size: 1.5em;
@@ -139,11 +140,48 @@ margin-bottom: 0%;
       font-family: garamond;
       font-weight: bolder;
       text-align: justify;
-       line-height: 1.5;
+      line-height: 1.5;
 }
 
+/********************Cursos Section*************************/
+#cursos h1{
+      color: #023b54;
+      font-family: garamond;
+      font-weight: bolder;
+      font-size: 2.2em;
+      text-align: center;
+}
+#cursos {color: #023b54;
+      font-family: garamond;
+      text-align: justify;
+      font-size: 1.5em;
+
+}
+
+#cursos {background-color: rgb(234, 234, 234);}
+.grid-4 {display:grid;
+         grid-template-columns: 100%;}  /**** MOBILE FIRST *******/
+
+
+/*estilo del video dentro de la card*/
+#cursos .container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /*para 4*3 , 56.25%; para  16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+ 
+}
+
+.card {
+      border:1px solid gray;
+      background-color: white;
+      border-radius: 5%;
+      padding:4%;}
+.card:hover {box-shadow: 3px 3px 5px #808080;}
+.card img {width:100%}
+
 /******************** footer *****************************************/
-footer {background-color: black;
+footer {background-color: #010D3D;
       color:white;}
 .grid-3d {
       display:grid;
@@ -256,3 +294,4 @@ footer a p:hover {
     display: block;
     text-align: left;
   }
+}
