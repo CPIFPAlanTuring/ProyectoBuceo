@@ -8,6 +8,11 @@
 @font-face {
       font-family: diving;
       src: url(../fonts/LostFish.ttf);
+
+@font-face {
+      font-family: garamondb;
+      src: url(../fonts/garamondb.ttf);
+}
 }
 /*************************** estilo general *********************/
 
@@ -23,26 +28,24 @@ body {margin:0;padding:0;   /* para desactivar el espacio de separación por def
           margin: auto ;}     /* centrado automático */
 
 html{scroll-behavior: smooth;}/*esto suaviza todos las bajadas de scroll*/
-.title {padding-top: 6vh;}
+
 
 /*********nav styles (from w3schools)***********/
 
 nav{position: sticky;
 top: 0;
 z-index: 99;
+margin-bottom: 0%;
+
 }/*que se quede pegada arriba*/
 
-.fa-arrow-circle-up{
-      font-size: 2.5em !important;/*para cuando entra en conflicto una regla con otra, para que prevalezca se coloca important*/
-      position: fixed;
+#diver{position: fixed;
       bottom: 20px;
       right: 20px;
       z-index: 99;
 
 }
-a .fa-arrow-circle-up{
-      color: rgb(112, 107, 107);
-}
+
  /* Add a black background color to the top navigation */
 .topnav {
   background-color: #05D1D8;
@@ -80,8 +83,8 @@ a .fa-arrow-circle-up{
       height:95vh;    /* el 100% del alto de la ventana del navegador */ 
       background-size: cover;
       background-position:center;
-      border-radius: 8%;
-      position:relative;  /**** contenedor relativo *****/
+      text-align: center;
+      position: relative;  /**** contenedor relativo *****/
       
       
 }
@@ -89,7 +92,8 @@ a .fa-arrow-circle-up{
       font-family: diving;
       font-size: 3em;
       color: white;
-  
+      padding-top: 3%;
+      
 }
 #hero button {background-color:#0BACD0;
             color:white;
@@ -99,7 +103,7 @@ a .fa-arrow-circle-up{
             border: 2px solid white;
             border-radius: 15px;
             position:absolute;    /******* contenido absoluto ******/
-            top:30%;
+            top:35%;
             left:50%;
             transform:translate(-50%,-50%); /*** lo traslado a la mitad de su tamaño **/ 
 }
@@ -120,9 +124,23 @@ a .fa-arrow-circle-up{
 #centroimg {width:100%;
       display:block;
       margin:auto;
-border-radius: 10%;}
+      border-radius: 10%;
 
-
+}
+#centro h1{
+      color: #023b54;
+      font-family: garamond;
+      font-weight: bolder;
+      font-size: 2em;
+}
+#centro p {
+      font-size: 1.5em;
+      color: #023b54;
+      font-family: garamond;
+      font-weight: bolder;
+      text-align: justify;
+       line-height: 1.5;
+}
 
 /******************** footer *****************************************/
 footer {background-color: black;
@@ -138,7 +156,7 @@ footer h3{
   margin: 20px 0;;
 }
 footer .fa{
-      padding: 15px 10px;
+  padding: 15px 10px;
   font-size: 1.5em;
   width: 50px;
   text-align: center;
@@ -158,9 +176,14 @@ footer .fa-facebook{
 background-color: #25D366;
   }
  
-footer .fa-twitter{
-      background-color: #55ACEE;}
-
+footer .fa-instagram{
+      background-color: #D43089;}
+footer .fa-tripadvisor{
+      background-color: #00af87;
+}
+footer #sitio-oficial{
+      font-family: diving;
+}
 
 
 
@@ -233,4 +256,3 @@ footer a p:hover {
     display: block;
     text-align: left;
   }
-} 
