@@ -114,6 +114,16 @@ margin-bottom: 0%;
       
 
 }
+
+#bubbles{
+  width: 90%;
+  height: 90%;
+/*border: 4px solid rgb(247, 243, 15); se coloca un borde visible para encontrarlo al momento de posicionarlo*/
+position: absolute; 
+
+top: 5%;
+left: 5%;
+}
 /******************  Centro  SECTION (GRID-2) ************************/
 
 .grid-2 {display:grid;

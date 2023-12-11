@@ -43,8 +43,14 @@
     </nav>
 
     <section id="hero">
-      <h1>abysub </h1>
-      <a href="#centro"><button>Sumergete con nosotros</button></a>
+      <div id="bubbles" onmouseover="sound('underbubble')" onmouseout="silence('underbubble')">
+        <h1>abysub </h1>
+        <a href="#centro"><button>Sumérgete con nosotros</button></a>
+        <audio id="underbubble" preload="auto">
+          <source src="./sounds/underwater-ambience-6201.mp3" type="audio/mp3">
+        </audio>
+      </div>
+
     </section>
 
     <!-- INTRO SECTION -->
@@ -74,7 +80,7 @@
             <h3>Bautismo de buceo</h3>
             <p>Si deseas una experiencia diferente, debes probar la sensación de respirar bajo el agua con total
               seguridad. </p>
-            <button class="button-cursos">Read more</button>
+            <button class="button-cursos">Leer más...</button>
           </div>
         </div>
         <div class="col-4">
@@ -82,7 +88,7 @@
             <h3>Padi Scuba Diver</h3>
             <p>Si tienes tiempo limitado en tus vacaciones este curso es el que estas buscando,el PADI SCUBA DIVER
               !!!!!! </p>
-            <button class="button-cursos">Read more</button>
+            <button class="button-cursos">Leer más...</button>
           </div>
         </div>
         <div class="col-4">
@@ -90,7 +96,7 @@
             <h3>Open Water Diver</h3>
             <p>En este curso aprenderás las técnicas necesarias para dominar tu cuerpo y el equipo en el entorno
               subacuático. </p>
-            <button class="button-cursos">Read more</button>
+            <button class="button-cursos">Leer más...</button>
           </div>
         </div>
         <div class="col-4">
@@ -98,7 +104,7 @@
               alt="un buzo mujer sacando una fotografia a una tortuga marina en el fondo del mar">
             <h3>Buceador avanzado</h3>
             <p>Ya eres buceador y buscas nuevas experiencias, el buceo profundo y nocturno son parte de ellas. </p>
-            <button class="button-cursos">Read more</button>
+            <button class="button-cursos">Leer más...</button>
           </div>
         </div>
       </div>
