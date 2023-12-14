@@ -334,6 +334,16 @@ background-color: #0155D2;
 }
 
 
+@media (max-width: 700px) {
+  .carousel .item {
+    min-height: auto; /* O una altura más pequeña que se ajuste mejor */
+     }
+     .carousel .item img {
+    max-height: 250px; /* O el tamaño máximo adecuado para las imágenes */
+ 
+  }
+}
+
 /******************** footer *****************************************/
 footer {background-color: #010D3D;
       color:white;}
