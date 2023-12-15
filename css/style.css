@@ -18,16 +18,11 @@
 
 * {box-sizing:border-box;}   /* con maquetación compleja SIEMPRE */
 
-body {margin:0%;
-      padding-left: 2%;
-      padding-right:3%;   /* para desactivar el espacio de separación por defecto */
+body {margin:0;padding:0;   /* para desactivar el espacio de separación por defecto */
       background-color: #05D1D8;
       }
 
 #wrapper {background-color:#05D1D8;
-
-      padding-left: 2%;
-      padding-right:3%;
           width:100%;        /* ancho fijado al 100%  MOBILE FIRST */
           
           margin: auto ;}     /* centrado automático */
@@ -40,10 +35,10 @@ html{scroll-behavior: smooth;}/*esto suaviza todos las bajadas de scroll*/
 nav{position: sticky;
 top: 0;
 z-index: 99;
-opacity: 0.9;
+opacity: 0.8;
 margin-bottom: 0%;
 
-}
+}/*que se quede pegada arriba*/
 
 #diver{position: fixed;
       bottom: 20px;
@@ -65,10 +60,9 @@ margin-bottom: 0%;
   color: #f2f2f2; /*esto le quita el color tipico azul*/
   text-align: center;
   padding: 14px 16px;
-  text-decoration:none ; /*para que no se subraye el vinculo*/
+  text-decoration: none; /*para que no se subraye el vinculo*/
   font-size: 1.5em; /*cambiar px por em*/
-  font-weight: bold;
-
+  font-weight: bolder;
   color: #03678B;
 }
 
@@ -189,6 +183,195 @@ background-color: #0155D2;
 #cursos p{
       padding: 2% 5%;
 }
+/* .grid-4 {display:grid;
+         grid-template-columns: 100%;}  /**** MOBILE FIRST *******/
+/*
+.card {
+      border:1px solid gray;
+      background-color: white;
+      border-radius: 5%;
+      padding:4%;
+      color: #04425D;
+      margin: 3%;
+}
+
+.card img {width:100%;
+max-width: 100%;
+height: auto;
+border-radius: 5%;} */
+/*******************card animada*********************/
+.cards {
+  overflow: visible;
+  width: 190px;
+  height: 254px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 300ms;
+  box-shadow: 0px 0px 10px 1px #000000ee;
+  border-radius: 5px;
+}
+
+.front, .back {
+  background-color: #151515;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.back::before {
+  position: absolute;
+  content: ' ';
+  display: block;
+  width: 160px;
+  height: 160%;
+  background: linear-gradient(90deg, transparent, #ff9966, #ff9966, #ff9966, #ff9966, transparent);
+  animation: rotation_481 5000ms infinite linear;
+}
+
+.back-content {
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  background-color: #151515;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.card:hover .content {
+  transform: rotateY(180deg);
+}
+
+@keyframes rotation_481 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  0% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.front {
+  transform: rotateY(180deg);
+  color: white;
+}
+
+.front .front-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.front-content .badge {
+  background-color: #00000055;
+  padding: 2px 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+  width: fit-content;
+}
+
+.description {
+  box-shadow: 0px 0px 10px 5px #00000088;
+  width: 100%;
+  padding: 10px;
+  background-color: #00000099;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 11px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title p {
+  width: 50%;
+}
+
+.card-footer {
+  color: #ffffff88;
+  margin-top: 5px;
+  font-size: 8px;
+}
+
+.front .img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #ffbb66;
+  position: relative;
+  filter: blur(15px);
+  animation: floating 2600ms infinite linear;
+}
+
+#bottom {
+  background-color: #ff8866;
+  left: 50px;
+  top: 0px;
+  width: 150px;
+  height: 150px;
+  animation-delay: -800ms;
+}
+
+#right {
+  background-color: #ff2233;
+  left: 160px;
+  top: -80px;
+  width: 30px;
+  height: 30px;
+  animation-delay: -1800ms;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+/*********************************************************/
 
 .card {color: #04425D;
   border: 1px solid gray;
@@ -239,111 +422,6 @@ background-color: #0155D2;
 }
 
 .card:hover {box-shadow: 3px 3px 5px #808080;}
-
-/**************************gallery********************/
-.carousel {
-	margin: 25px 0 50px;
-    background: #fff;
-	position: relative;
-	padding: 8px;
-	box-shadow: 0 0 1px rgba(0,0,0,0.3);
-}
-.carousel:before, .carousel:after {
-	z-index: -1; 
-	position: absolute; 
-	content: "";
-	bottom: 15px;
-	left: 10px;
-	width: 50%; 
-	top: 80%;
-	max-width: 400px;
-	background: rgba(0, 0, 0, 0.7); 
-	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
-	transform: rotate(-3deg);
-}
-.carousel:after {
-  transform: rotate(3deg);
-  right: 10px;
-  left: auto;
-}
-.carousel .item {	
-    text-align: center;
-	min-height: 314px;
-}
-.carousel .item img {
-	max-width: 100%;
-    margin: 0 auto; /* Align slide image horizontally center in Bootstrap v3 */
-}
-.carousel .carousel-control {
-	width: 27px;
-	height: 54px;
-	overflow: hidden;
-	opacity: 1;
-	margin: auto 0;
-	background: none;
-	text-shadow: none;
-}
-.carousel .carousel-control span {
-	width: 54px;
-    height: 54px;
-	display: inline-block;
-    background: #4a4a4a;    
-    border-radius: 50%;
-    box-shadow: 0 0 1px rgba(0,0,0,0.3);
-}
-.carousel .carousel-control.left span {
-	margin-right: -27px;
-}
-.carousel .carousel-control.right span {
-	margin-left: -27px;
-}
-.carousel .carousel-control:hover span {
-	background: #3b3b3b;
-}
-.carousel .carousel-control i {
-    font-size: 24px;
-    margin-top: 13px;
-}
-.carousel .carousel-control.left {
-	margin-left: -28px;
-}
-.carousel .carousel-control.right {
-	margin-right: -28px;
-}
-.carousel .carousel-control.left i {
-	margin-left: -24px;
-}
-.carousel .carousel-control.right i {
-	margin-right: -24px;
-}
-.carousel-indicators {
-	bottom: -42px;
-}
-.carousel-indicators li, .carousel-indicators li.active {
-	width: 11px;
-	height: 11px;
-	border-radius: 50%;
-	margin: 1px 4px;
-}
-.carousel-indicators li {
-	border: 1px solid #475c6f;
-}
-.carousel-indicators li.active {
-	background: #20b0b9;
-	border-color: #20b0b9;
-}
-
-
-@media (max-width: 700px) {
-  .carousel .item {
-    min-height: auto; /* O una altura más pequeña que se ajuste mejor */
-     }
-     .carousel .item img {
-    max-height: 250px; /* O el tamaño máximo adecuado para las imágenes */
- 
-  }
-}
-
 /******************** footer *****************************************/
 footer {background-color: #010D3D;
       color:white;}
@@ -352,9 +430,7 @@ footer {background-color: #010D3D;
       grid-template-columns: 50% 50%; 
       
 }
-footer #atribuciones{
-  margin-top: 10%;
-}
+
 .col-4 {padding:4%;}
 footer h3{
   margin: 20px 0;;
@@ -396,7 +472,6 @@ footer .container {
   position: relative;
   overflow: hidden;
   width: 100%;
-  
   padding-top: 75%; /*para 4*3 , 56.25%; para  16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
  
 }
@@ -429,7 +504,7 @@ footer a p:hover {
 /************** responsividad ****************************************/
 
 @media only screen and (width>650px){   /****** TABLET *********/
-      #wrapper {width:97%;}
+      #wrapper {width:90%;}
       .grid-4 {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -440,15 +515,12 @@ footer a p:hover {
 
 @media only screen and (width>900px){   /************* COMPUTER **********/
       .grid-2 {grid-template-columns:50% 50%;}
-      .grid-3d {grid-template-columns: 33% 33% 33%;}
+      .grid-3d {grid-template-columns: 25% 25% 50%;}
       .grid-4 {
     display: grid;
     grid-template-columns: auto auto auto auto;
   
     padding: 1%;
-   /*footer .responsive-iframe{
-    height: 40%;
-   }*/
 }
       
      }
