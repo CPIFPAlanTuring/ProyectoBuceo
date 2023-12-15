@@ -175,7 +175,7 @@ background-color: #0155D2;
 
 #cursos .container {
   position: relative;
-  overflow: hidden;
+  overflow: hidden; 
   width: 100%;
 }
 #cursos p{
@@ -249,7 +249,7 @@ footer {background-color: #010D3D;
       color:white;}
 .grid-3d {
       display:grid;
-      grid-template-columns: 50% 50%; 
+      grid-template-columns: 33% 33% 33%; 
       
 }
 
@@ -333,6 +333,7 @@ footer a p:hover {
     padding: 2%;
     margin: 2%;
 }
+
 }
 
 @media only screen and (width>900px){   /************* COMPUTER **********/
@@ -341,10 +342,13 @@ footer a p:hover {
       .grid-4 {
     display: grid;
     grid-template-columns: auto auto auto auto;
-  
-    padding: 1%;
+      padding: 1%;
 }
-      
+      footer .responsive-iframe {
+
+  height: 50%; /*en lugar de al 100% deja un libre un 20% y lo acomodamos con top y left para centrarlo un poco*/
+ 
+}
      }
 /********responsive topnav de w3schools ***********/
  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
