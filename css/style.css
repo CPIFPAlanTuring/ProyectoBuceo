@@ -1,7 +1,7 @@
 /****************************************************************/
 /*        Style sheet for Buceando por el mundo web site        */
 /*        author: Barbara Colomer                               */
-/*        version: 1.2                                         */
+/*        version: 1.0                                          */
 /*        comments: class project 2023-24                       */
 /****************************************************************/
 
@@ -20,7 +20,7 @@
 
 body {margin:0;padding:0;   /* para desactivar el espacio de separación por defecto */
       background-color: #05D1D8;
-      }
+      font-family: textonormal;}
 
 #wrapper {background-color:#05D1D8;
           width:100%;        /* ancho fijado al 100%  MOBILE FIRST */
@@ -29,13 +29,11 @@ body {margin:0;padding:0;   /* para desactivar el espacio de separación por def
 
 html{scroll-behavior: smooth;}/*esto suaviza todos las bajadas de scroll*/
 
-
 /*********nav styles (from w3schools)***********/
 
 nav{position: sticky;
 top: 0;
 z-index: 99;
-opacity: 0.8;
 margin-bottom: 0%;
 
 }/*que se quede pegada arriba*/
@@ -70,7 +68,7 @@ margin-bottom: 0%;
 .topnav a:hover {
   background-color: #4AB0BF;
   color: #e7f0f3;
-  border-radius: 0 0 15px 15px;
+  border-radius: 0% 0% 15% 15%;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -97,7 +95,6 @@ margin-bottom: 0%;
       
 }
 #hero button {background-color:#0BACD0;
-  
             color:white;
             font-size: 1.5em;
             font-weight: bold;
@@ -199,184 +196,11 @@ background-color: #0155D2;
 max-width: 100%;
 height: auto;
 border-radius: 5%;} */
-/*******************card animada*********************/
-.cards {
-  overflow: visible;
-  width: 190px;
-  height: 254px;
-}
-
-.content {
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 300ms;
-  box-shadow: 0px 0px 10px 1px #000000ee;
-  border-radius: 5px;
-}
-
-.front, .back {
-  background-color: #151515;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.back {
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-
-.back::before {
-  position: absolute;
-  content: ' ';
-  display: block;
-  width: 160px;
-  height: 160%;
-  background: linear-gradient(90deg, transparent, #ff9966, #ff9966, #ff9966, #ff9966, transparent);
-  animation: rotation_481 5000ms infinite linear;
-}
-
-.back-content {
-  position: absolute;
-  width: 99%;
-  height: 99%;
-  background-color: #151515;
-  border-radius: 5px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-
-.card:hover .content {
-  transform: rotateY(180deg);
-}
-
-@keyframes rotation_481 {
-  0% {
-    transform: rotateZ(0deg);
-  }
-
-  0% {
-    transform: rotateZ(360deg);
-  }
-}
-
-.front {
-  transform: rotateY(180deg);
-  color: white;
-}
-
-.front .front-content {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.front-content .badge {
-  background-color: #00000055;
-  padding: 2px 10px;
-  border-radius: 10px;
-  backdrop-filter: blur(2px);
-  width: fit-content;
-}
-
-.description {
-  box-shadow: 0px 0px 10px 5px #00000088;
-  width: 100%;
-  padding: 10px;
-  background-color: #00000099;
-  backdrop-filter: blur(5px);
-  border-radius: 5px;
-}
-
-.title {
-  font-size: 11px;
-  max-width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.title p {
-  width: 50%;
-}
-
-.card-footer {
-  color: #ffffff88;
-  margin-top: 5px;
-  font-size: 8px;
-}
-
-.front .img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.circle {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  background-color: #ffbb66;
-  position: relative;
-  filter: blur(15px);
-  animation: floating 2600ms infinite linear;
-}
-
-#bottom {
-  background-color: #ff8866;
-  left: 50px;
-  top: 0px;
-  width: 150px;
-  height: 150px;
-  animation-delay: -800ms;
-}
-
-#right {
-  background-color: #ff2233;
-  left: 160px;
-  top: -80px;
-  width: 30px;
-  height: 30px;
-  animation-delay: -1800ms;
-}
-
-@keyframes floating {
-  0% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(10px);
-  }
-
-  100% {
-    transform: translateY(0px);
-  }
-}
-/*********************************************************/
 
 .card {color: #04425D;
   border: 1px solid gray;
   background-color: #B5E2DD;
-  border-radius: 20px;
+  border-radius: 3%;
   padding: 2%; /* Reducir el relleno para permitir que el contenido tenga más espacio */
   height: 100%; /* Altura fija para las tarjetas */
   display: flex; /* Utilizar flexbox para el diseño interno */
@@ -388,7 +212,7 @@ border-radius: 5%;} */
   width: 100%;
   max-width: 100%;
   height: auto;
-  border-radius: 20px;
+  border-radius: 5%;
 }
 
 .card h2 {
@@ -401,14 +225,11 @@ border-radius: 5%;} */
  
 }
 .button-cursos{
-      border-color: #7b9a96;
+      background-color: #B5E2DD;
       color: #04425D;
-      font-size: 0.6em;
-      border-radius: 40px;
-      background: #B5E2DD;
-      box-shadow: inset -9px -9px 18px #7b9a96,
-                  inset 9px 9px 18px #efffff;
-      
+      font-size: 0.8em;
+      border-radius: 15%;
+      border: none;
       align-self: flex-end; /* Coloca el botón al final de la tarjeta */
       margin-top: auto; /* Asegura que el botón esté pegado al final, sin importar la cantidad de contenido */
       
@@ -466,7 +287,6 @@ footer #sitio-oficial{
 }
 
 
-
 /*google maps en footer*/
 footer .container {
   position: relative;
@@ -500,7 +320,6 @@ footer a p:hover {
 }
 
 
-
 /************** responsividad ****************************************/
 
 @media only screen and (width>650px){   /****** TABLET *********/
@@ -530,7 +349,7 @@ footer a p:hover {
      }
 /********responsive topnav de w3schools ***********/
  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 890px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -539,7 +358,7 @@ footer a p:hover {
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
