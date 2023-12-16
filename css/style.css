@@ -46,7 +46,7 @@ html{scroll-behavior: smooth;}/*esto suaviza todos las bajadas de scroll*/
       color: white;
       font-family: aima;
       font-weight: bolder;
-      font-size: 2.2em;
+      font-size: 2em;
       text-align: center;
       padding-top: 3%;
 }
@@ -166,16 +166,16 @@ left: 5%;
       color: #023b54;
       font-family: aima;
       font-weight: bolder;
-      font-size: 2.2em;
+      font-size: 2em;
       text-align: center;
 }
 #centro p {
-      font-size: 1.6em;
+      font-size: 1.4em;
       color: #023b54;
       font-family:garamond;
       font-weight: bolder;
       text-align: justify;
-      line-height: 1.5;
+      line-height: 1.3;
 }
 
 /********************Cursos Section*************************/
@@ -183,12 +183,13 @@ left: 5%;
 #cursos {color: white;
       font-family: garamond;
       text-align: justify;
-      font-size: 1.5em;
+      font-size: 1.4em;
 background-color: #0155D2;
 border-radius: 20px;
 }
 #cursos h1{
   color: white;
+  padding-bottom: 0;
 }
 #cursos h3{
   font-family: garamonb;
@@ -357,6 +358,64 @@ h1{color: #023b54;
   to {opacity: 1}
 }
 
+ /***********************Conservacion section******************/
+
+#more {display: none;}
+
+ #conservacion {color: white;
+      font-family: garamond;
+      text-align: justify;
+      font-size: 1.4em;
+background-color: #0155D2;
+border-radius: 20px;
+margin-top: 3%;
+padding: 3%;
+margin-bottom: 3%;
+
+}
+#conservacion h1{
+  color: white;
+  padding-bottom: 0;
+}
+#conservacion h3{
+  font-family: garamonb;
+      font-weight: lighter;
+      text-align: center;
+}
+
+/*#cursos .container {
+  position: relative;
+  overflow: hidden; 
+  width: 100%;
+}
+#cursos p{
+  
+      padding: 2% 5%;
+      font-family: garamond;
+}
+#curso-tittle-p{
+  
+      font-size: 1.5em;
+      color: white;
+      font-family:garamond;
+      font-weight: bolder;
+      text-align: justify;
+      line-height: 1.5;
+      padding: 2% 5%; 
+}*/
+
+
+
+
+/* Ajustar grid o flexbox para la disposición de las tarjetas */
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Usar fracciones flexibles para las columnas */
+  gap: 5px; /* Espacio entre las tarjetas */
+}
+
+
+ 
 
 /******************** footer *****************************************/
 footer {background-color: #010D3D;
@@ -463,7 +522,7 @@ footer a p:hover {
   width: 80%; /* Could be more or less, depending on screen size */
 }
 
-#myBtn{
+#myBtnModal{
 border-radius: 10px;
 background: linear-gradient(145deg, #d4ffff, #b2dbe2);
 box-shadow:  8px 8px 16px #0c124d,
@@ -498,6 +557,9 @@ box-shadow:  8px 8px 16px #0c124d,
     padding: 2%;
     margin: 2%;
 }
+#conservacion{
+  padding: 6%;
+}
 
 }
 
@@ -507,8 +569,12 @@ box-shadow:  8px 8px 16px #0c124d,
       .grid-4 {
     display: grid;
     grid-template-columns: auto auto auto auto;
-      padding: 1%;
+      padding: 1%;    }
+
+#conservacion{
+  padding: 7%;
 }
+
       footer .responsive-iframe {
 
   height: 50%; /*en lugar de al 100% deja un libre un 20% y lo acomodamos con top y left para centrarlo un poco*/
