@@ -24,20 +24,7 @@ function silence(element){
 
 
 /****function autoslideshow***** */
-/*let slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-} */
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -115,7 +102,7 @@ window.onclick = function(event) {
 } 
 
 /*************funciones seccion conservacion marina************* */
-function myFunction() {
+function toggleReadMore() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("mas");
   var btnText = document.getElementById("myBtn");
@@ -130,4 +117,3 @@ function myFunction() {
     moreText.style.display = "inline";
   }
 } 
-
