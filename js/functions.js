@@ -1,8 +1,8 @@
 
-
 /******
- * 
- */
+ * Funciones para navbar, ventana modal, sonido hero section y readmore de texto
+ **********/
+
 /****funcion topnav responsive */
 function myFunction() {
   var x = document.getElementById("myTopnav");
@@ -101,7 +101,9 @@ window.onclick = function(event) {
   }
 } 
 
+
 /*************funciones seccion conservacion marina************* */
+
 function toggleReadMoreEnglish() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
@@ -123,7 +125,7 @@ function toggleReadMoreSpanish() {
   var moreText = document.getElementById("mas");
   var btnText = document.getElementById("myBtn");
 
-  if (dots.style.display === "none") {
+  if (dots.style.display === "none") { 
     dots.style.display = "inline";
     btnText.innerHTML = "Leer mas";
     moreText.style.display = "none";

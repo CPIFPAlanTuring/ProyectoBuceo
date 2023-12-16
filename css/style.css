@@ -1,7 +1,7 @@
 /****************************************************************/
 /*        Style sheet for Buceando por el mundo web site        */
 /*        author: Barbara Colomer                               */
-/*        version: 1.0                                          */
+/*        version: 2.0                                          */
 /*        comments: class project 2023-24                       */
 /****************************************************************/
 
@@ -28,42 +28,49 @@
 
 /*************************** estilo general *********************/
 
-* {box-sizing:border-box;}   /* con maquetación compleja SIEMPRE */
+* {
+  box-sizing:border-box;
+}   /* con maquetación compleja SIEMPRE */
 
-body {margin:0;   /* para desactivar el espacio de separación por defecto */
+body {
+  margin:0;   /* para desactivar el espacio de separación por defecto */
   padding: 0;    
   background-color: #05D1D8;
-      font-family: garamondb;}
+  font-family: garamondb;
+}
 
-#wrapper {background-color:#05D1D8;
-          width:98%;        /* ancho fijado al 100%  MOBILE FIRST */
-          
-          margin: auto ;    /* centrado automático */
-          /* margin-right: 0.5%; */
+#wrapper {
+  background-color:#05D1D8;
+  width:98%;        /* ancho fijado al 100%  MOBILE FIRST */
+  margin: auto ;    /* centrado automático */
 }
-html{scroll-behavior: smooth;}/*esto suaviza todos las bajadas de scroll*/
- h1{
-      color: white;
-      font-family: aima;
-      
-      font-size: 1.8em;
-      text-align: center;
-      padding-top: 3%;
+
+html {
+  scroll-behavior: smooth;/*esto suaviza todos las bajadas de scroll*/
 }
+
+h1 {
+  color: white;
+  font-family: aima;
+  font-size: 1.8em;
+  text-align: center;
+  padding-top: 3%;
+}
+
 /*********nav styles (from w3schools)***********/
 
-nav{position: sticky;
-top: 0;
-z-index: 99;
-margin-bottom: 0%;
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  margin-bottom: 0%;/*que se quede pegada arriba*/
+}
 
-}/*que se quede pegada arriba*/
-
-#diver{position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 99;
-
+#diver{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
 }
 
  /* Add a black background color to the top navigation */
@@ -100,27 +107,26 @@ margin-bottom: 0%;
 
 /***************************   HERO SECTION *********************************/
 
-#hero {background-image: url(../img/paisaje-submarino1.jpg);
-      height:95vh;    /* el 100% del alto de la ventana del navegador */ 
-      
-      background-size: cover;
-      background-position:center;
-      text-align: center;
-      position: relative;  /**** contenedor relativo *****/
-      
-      
+#hero {
+  background-image: url(../img/paisaje-submarino1.jpg);
+  height:95vh;    /* el 100% del alto de la ventana del navegador */ 
+  background-size: cover;
+  background-position:center;
+  text-align: center;
+  position: relative;  /**** contenedor relativo *****/    
 }
+
 #hero h1 {
-      font-family: diving;
-      font-size: 3em;
-      color: white;
-      padding-top: 3%;
-      
+  font-family: diving;
+  font-size: 3em;
+  color: white;
+  padding-top: 3%;
 }
+
 .button-container {
   display: flex;
   justify-content: center; /* Centra los botones horizontalmente */
-   margin-top: 90px;
+  margin-top: 90px;
 }
 
 #button-bucea,
@@ -128,8 +134,6 @@ margin-bottom: 0%;
   margin: 0 5px; /* Espacio entre los botones */
   margin-top: 10px; /* Margen superior para ajustar la posición vertical */
 }
-
-
 
 #button-bucea button,
 #button-dive button {
@@ -141,7 +145,6 @@ margin-bottom: 0%;
   padding: 15px;
   border: 2px solid white;
   border-radius: 15px;
-
 }
 
 #button-bucea button:hover,
@@ -156,63 +159,72 @@ margin-bottom: 0%;
   width: 90%;
   height: 90%;
 /*border: 4px solid rgb(247, 243, 15); se coloca un borde visible para encontrarlo al momento de posicionarlo*/
-position: absolute; 
-
-top: 5%;
-left: 5%;
+  position: absolute; 
+  top: 5%;
+  left: 5%;
 }
+
 /******************  Centro  SECTION (GRID-2) ************************/
 #centro{
   margin-top: 5%;
 }
-.grid-2 {display:grid;
-         grid-template-columns: 100%;} /*** MOBILE FIRST ****/
 
-.col-2 {padding:4%;}
-
-#centroimg {width:100%;
-      display:block;
-      margin:auto;
-      border-radius: 30px;
-
+.grid-2 {
+  display:grid;
+  grid-template-columns: 100%;/*** MOBILE FIRST ****/
 }
+
+.col-2 {
+  padding:4%;
+}
+
+#centroimg {
+  width:100%;
+  display:block;
+  margin:auto;
+  border-radius: 30px;
+}
+
 #centro h1{
-      color: #023b54;
-      font-family: aima;
-      font-weight: bolder;
-      font-size: 1.8em;
-      text-align: center;
+  color: #023b54;
+  font-family: aima;
+  font-weight: bolder;
+  font-size: 1.8em;
+  text-align: center;
 }
+
 #centro p {
-      font-size: 1.4em;
-      color: #023b54;
-      font-family:garamond;
-      font-weight: bolder;
-      text-align: justify;
-      line-height: 1.3;
+  font-size: 1.4em;
+  color: #023b54;
+  font-family:garamond;
+  font-weight: bolder;
+  text-align: justify;
+  line-height: 1.3;
 }
 
 /********************Cursos Section*************************/
 
-#cursos {color: white;
-      font-family: garamond;
-      text-align: justify;
-      font-size: 1.4em;
-background-color: #0155D2;
-border-radius: 20px;
+#cursos {
+  color: white;
+  font-family: garamond;
+  text-align: justify;
+  font-size: 1.4em;
+  background-color: #0155D2;
+  border-radius: 20px;
 }
+
 #cursos h1{
   color: white;
   padding-bottom: 0;
   font-family: aima;
   font-size: 1.8em;
   text-align: center;
-  
 }
+
 #cursos h3{
   font-family: garamonb;
-      font-weight: lighter;
-      text-align: center;
+  font-weight: lighter;
+  text-align: center;
 }
 
 #cursos .container {
@@ -220,20 +232,20 @@ border-radius: 20px;
   overflow: hidden; 
   width: 100%;
 }
+
 #cursos p{
-  
-      padding: 2% 5%;
-      font-family: garamond;
+  padding: 2% 5%;
+  font-family: garamond;
 }
+
 #curso-tittle-p{
-  
-      font-size: 1.5em;
-      color: white;
-      font-family:garamond;
-      font-weight: bolder;
-      text-align: justify;
-      line-height: 1.5;
-      padding: 2% 5%; 
+  font-size: 1.5em;
+  color: white;
+  font-family:garamond;
+  font-weight: bolder;
+  text-align: justify;
+  line-height: 1.5;
+  padding: 2% 5%; 
 }
 
 .card {color: #04425D;
@@ -261,19 +273,19 @@ border-radius: 20px;
 
 .card p {
   font-size: 1em;
- 
 }
+
 .button-cursos{
-      border-color: #7b9a96;
-      color: #04425D;
-      font-size: 0.6em;
-      border-radius: 40px;
-      background: #B5E2DD;
-      box-shadow: inset -9px -9px 18px #7b9a96,
-                  inset 9px 9px 18px #efffff;
-      align-self: flex-end; /* Coloca el botón al final de la tarjeta */
-      margin-top: auto; /* Asegura que el botón esté pegado al final, sin importar la cantidad de contenido */
-      }     
+  border-color: #7b9a96;
+  color: #04425D;
+  font-size: 0.6em;
+  border-radius: 40px;
+  background: #B5E2DD;
+  box-shadow: inset -9px -9px 18px #7b9a96,
+              inset 9px 9px 18px #efffff;
+  align-self: flex-end; /* Coloca el botón al final de la tarjeta */
+  margin-top: auto; /* Asegura que el botón esté pegado al final, sin importar la cantidad de contenido */
+}     
       
 /* Ajustar grid o flexbox para la disposición de las tarjetas */
 .grid-4 {
@@ -282,7 +294,9 @@ border-radius: 20px;
   gap: 5px; /* Espacio entre las tarjetas */
 }
 
-.card:hover {box-shadow: 3px 3px 5px #808080;}
+.card:hover {
+  box-shadow: 3px 3px 5px #808080;
+}
 
 /********************************gallery**********************/
 
@@ -293,25 +307,24 @@ border-radius: 20px;
   position: relative;
   margin: auto;
 }
-h1{color: #023b54;
+
+h1{
+  color: #023b54;
   font-family: aima;
   font-size: 1.8em;
   text-align: center;
-  
-  
-}
+  }
+
 /* Hide the images by default */
 .mySlides {
   display: none;
-  
 }
+
 .slide_img{
   border: 3px solid white;
   border-radius: 20px;
- /* margin-left: 2%;
-  margin-right: 10%;
-  max-width: 95%;*/
 }
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -350,8 +363,6 @@ h1{color: #023b54;
   text-align: center;
 }
 
-
-
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -364,10 +375,10 @@ h1{color: #023b54;
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {}
- /* background-color: #717171;
-}
+.active, .dot:hover {
 
+}
+ 
 /* Fading animation */
 .fade {
   animation-name: fade;
@@ -385,27 +396,31 @@ h1{color: #023b54;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Usar fracciones flexibles para las columnas */
   gap: 5px; /* Espacio entre las tarjetas */
-  
 }
+
 .colu-3{
-    margin: 3%;
+  margin: 3%;
 }
 
-
-#mas {display: none;}
-#more {display: none;}
-
- #conservacion {color: white;
-      font-family: garamond;
-      text-align: justify;
-      font-size: 1.4em;
-background-color: #0155D2;
-border-radius: 20px;
-margin-top: 3%;
-padding: 3%;
-margin-bottom: 3%;
-
+#mas {
+  display: none;
 }
+#more {
+  display: none;
+}
+ 
+ #conservacion {
+  color: white;
+  font-family: garamond;
+  text-align: justify;
+  font-size: 1.4em;
+  background-color: #0155D2;
+  border-radius: 20px;
+  margin-top: 3%;
+  padding: 3%;
+  margin-bottom: 3%;
+}
+
 #conservacion h1{
   color: white;
   padding-bottom: 0;
@@ -413,23 +428,24 @@ margin-bottom: 3%;
   font-size: 1.7em;
   text-align: center;
 }
+
 #conservacion h3{
   font-family: garamonb;
-      font-weight: lighter;
-      text-align: center;
+  font-weight: lighter;
+  text-align: center;
 }
-#myBtn{
-      border-color: #7b9a96;
-      color: #04425D;
-      font-size: 0.6em;
-      border-radius: 40px;
-      background: #05D1D8;
-      box-shadow: inset -9px -9px 18px #7b9a96,
-                  inset 9px 9px 18px #efffff;
-      align-self: flex-end; /* Coloca el botón al final de la tarjeta */
-      margin-top: auto; /* Asegura que el botón esté pegado al final, sin importar la cantidad de contenido */
-      }   
 
+#myBtn{
+  border-color: #7b9a96;
+  color: #04425D;
+  font-size: 0.6em;
+  border-radius: 40px;
+  background: #05D1D8;
+  box-shadow: inset -9px -9px 18px #7b9a96,
+              inset 9px 9px 18px #efffff;
+  align-self: flex-end; /* Coloca el botón al final de la tarjeta */
+  margin-top: auto; /* Asegura que el botón esté pegado al final, sin importar la cantidad de contenido */
+}   
 
 /* Ajustar grid o flexbox para la disposición de las tarjetas */
 .grid-4 {
@@ -439,21 +455,25 @@ margin-bottom: 3%;
 }
 
 
- 
-
 /******************** footer *****************************************/
-footer {background-color: #010D3D;
-      color:white;}
-.grid-3d {
-      display:grid;
-      grid-template-columns: 33% 33% 33%; 
-      
+footer {
+  background-color: #010D3D;
+  color:white;
 }
 
-.col-4 {padding:4%;}
-footer h3{
-  margin: 20px 0;;
+.grid-3d {
+  display:grid;
+  grid-template-columns: 33% 33% 33%; 
 }
+
+.col-4 {
+  padding:4%;
+}
+
+footer h3{
+  margin: 20px 0;
+}
+
 footer .fa{
   padding: 15px 10px;
   font-size: 1.5em;
@@ -463,28 +483,32 @@ footer .fa{
   margin: 5px 2px;
   border-radius:50%/*es margen por dentro, amplia el margen interno, se ve mejor en el icono de facebook*/
 }
+
 footer a {
-      color: white;
-      text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
+
 /* redes sociales en footer*/
 footer .fa-facebook{
-      background: #3B5998;
-      color: white;
-}footer .fa-whatsapp{
-      background-color: #25D366;
+  background: #3B5998;
+  color: white;
+}
+
+footer .fa-whatsapp{
+  background-color: #25D366;
 }
  
 footer .fa-instagram{
-      background-color: #D43089;
-}
-footer .fa-tripadvisor{
-      background-color: #00af87;
-}
-footer #sitio-oficial{
-      font-family: diving;
+  background-color: #D43089;
 }
 
+footer .fa-tripadvisor{
+  background-color: #00af87;
+}
+footer #sitio-oficial{
+  font-family: diving;
+}
 
 /*google maps en footer*/
 footer .container {
@@ -492,12 +516,10 @@ footer .container {
   overflow: hidden;
   width: 100%;
   padding-top: 75%; /*para 4*3 , 56.25%; para  16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
- 
 }
 
 /* Then style the iframe to fit in the container div with full height and width */
 footer .responsive-iframe {
-
   position: absolute;
   top: 10%;
   left: 10%;
@@ -506,23 +528,27 @@ footer .responsive-iframe {
   width: 80%; /*en lugar de al 100% deja un libre un 20% y lo acomodamos con top y left para centrarlo un poco*/
   height: 80%;
 }
+
 footer a p{
   font-size: 1.2em;
   margin-bottom: 15px;
   border:hidden;
 }
+
 footer a p:hover {
-                  color:rgb(196, 195, 195);
-                  border-left: 3px solid white;
-                  padding-left: 10px;
-                  transition: 1s;
+  color:rgb(196, 195, 195);
+  border-left: 3px solid white;
+  padding-left: 10px;
+  transition: 1s;
 }
 
 /***modal window****/
  /* The Modal (background) */
+
  #modal-section{
   margin-top: 10%;
  }
+
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -547,12 +573,13 @@ footer a p:hover {
 }
 
 #myBtnModal{
-border-radius: 10px;
-background: linear-gradient(145deg, #d4ffff, #b2dbe2);
-box-shadow:  8px 8px 16px #0c124d,
-             -8px -8px 16px #0c124d;
-             padding: 3%;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #d4ffff, #b2dbe2);
+  box-shadow:  8px 8px 16px #0c124d,
+              -8px -8px 16px #0c124d;
+  padding: 3%;
 }
+
 /* The Close Button */
 .close {
   color: #110466;
@@ -569,46 +596,51 @@ box-shadow:  8px 8px 16px #0c124d,
 } 
 
 
-
-
 /************** responsividad ****************************************/
 
 @media only screen and (width>650px){   /****** TABLET *********/
-      #wrapper {width:90%;}
-      .grid-4 {
+  #wrapper {
+    width:90%;
+  }
+  .grid-4 {
     display: grid;
     grid-template-columns: 50% 50%;
     padding: 2%;
     margin: 2%;
-}
-#conservacion{
-  padding: 6%;
-}
-
+  }
+  #conservacion{
+    padding: 6%;
+  }
 }
 
 @media only screen and (width>900px){   /************* COMPUTER **********/
-      .grid-2 {grid-template-columns:50% 50%;}
-      .grid-3d {grid-template-columns: 25% 25% 50%;}
-      .grid-4 {
+  .grid-2 {
+    grid-template-columns:50% 50%;
+  }
+  .grid-3d {
+    grid-template-columns: 25% 25% 50%;
+  }
+  .grid-4 {
     display: grid;
     grid-template-columns: auto auto auto auto;
-      padding: 1%;    }
-
-#conservacion{
-  padding: 7%;
-}
-
-      footer .responsive-iframe {
-
+    padding: 1%;    
+  }
+  #conservacion{
+    padding: 7%;
+  }
+  footer .responsive-iframe {
   height: 50%; /*en lugar de al 100% deja un libre un 20% y lo acomodamos con top y left para centrarlo un poco*/
- 
+  }
 }
-     }
+
+
 /********responsive topnav de w3schools ***********/
  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 912px) {
-  .topnav a:not(:first-child) {display: none;}
+
+ @media screen and (max-width: 912px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -617,7 +649,9 @@ box-shadow:  8px 8px 16px #0c124d,
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 912px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
