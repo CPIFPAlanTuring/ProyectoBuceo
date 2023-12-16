@@ -360,7 +360,7 @@ h1{color: #023b54;
 
  /***********************Conservacion section******************/
 
-#more {display: none;}
+#mas {display: none;}
 
  #conservacion {color: white;
       font-family: garamond;
@@ -382,6 +382,17 @@ margin-bottom: 3%;
       font-weight: lighter;
       text-align: center;
 }
+#myBtn{
+      border-color: #7b9a96;
+      color: #04425D;
+      font-size: 0.6em;
+      border-radius: 40px;
+      background: #05D1D8;
+      box-shadow: inset -9px -9px 18px #7b9a96,
+                  inset 9px 9px 18px #efffff;
+      align-self: flex-end; /* Coloca el botón al final de la tarjeta */
+      margin-top: auto; /* Asegura que el botón esté pegado al final, sin importar la cantidad de contenido */
+      }   
 
 /*#cursos .container {
   position: relative;

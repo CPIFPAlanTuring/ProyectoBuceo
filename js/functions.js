@@ -117,16 +117,16 @@ window.onclick = function(event) {
 /*************funciones seccion conservacion marina************* */
 function myFunction() {
   var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
+  var moreText = document.getElementById("mas");
   var btnText = document.getElementById("myBtn");
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
+    btnText.innerHTML = "Leer mas";
     moreText.style.display = "none";
   } else {
     dots.style.display = "none";
-    btnText.innerHTML = "Read less";
+    btnText.innerHTML = "Leer menos";
     moreText.style.display = "inline";
   }
 } 
