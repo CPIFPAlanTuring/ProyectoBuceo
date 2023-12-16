@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diving around the world</title>
+  <title>Buceando por el mundo</title>
   <link rel="shortcut icon" href="./img/turtle.png" type="image/x-icon">
   <link rel="stylesheet" href="./css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,12 +24,12 @@
 
     <nav>
       <div class="topnav" id="myTopnav">
-        <a href="#" class="active">Home</a><!--solo # es el indicio de la pagina-->
-        <a href="#centro">Us</a>
-        <a href="#cursos">Courses</a>
-        <a href="#galeria">Gallery</a>
-        <a href="#conservacion">Sea preservation</a>
-        <a href="#footer-contacto">Contact</a>
+        <a href="#" class="active">Inicio</a><!--solo # es el indicio de la pagina-->
+        <a href="#centro">Nosotros</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#galeria">Galería</a>
+        <a href="#conservacion">Conservación marina</a>
+        <a href="#footer-contacto">Contacto</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <!--void 0 desactiva el comportamiento por defecto que tiene un vinculo y a cambio activa el onclick-->
           <i class="fa fa-bars"></i><!--este es el menu hamburguesa-->
@@ -41,10 +41,9 @@
       <div id="bubbles" onmouseover="sound('underbubble')" onmouseout="silence('underbubble')">
         <h1>abysub </h1>
         <div class="button-container">
-          <a href="#centro" id="button-bucea"><button onclick="window.location.href='index_es.html#centro'">Sumérgete
-              con
-              nosotros</button></a>
-          <a href="#centro" id="button-dive" class="english-button"><button>Dive with us</button></a>
+          <a href="#centro" id="button-bucea"><button>Sumérgete con nosotros</button></a>
+          <a href="#centro" id="button-dive" class="english-button"><button
+              onclick="window.location.href='index.html#centro'">Dive with us</button></a>
         </div>
         <audio id="underbubble" preload="auto">
           <source src="./sounds/underwater-ambience-6201.mp3" type="audio/mp3">
@@ -57,57 +56,56 @@
     <section id="centro">
       <div class="grid-2"> <!-- esto va a ser el contenedor del grid de 2-->
         <div id="centro-texto" class="col-2">
-          <h1 class="title">AbySub Diving School</h1>
-          <p>Welcome to AbySub, a diving school located in Fuengirola. We offer you the opportunity to explore the
-            underwater world
-            in a safe and enjoyable way. In a comfortable and relaxed environment, a certified PADI instructor will
-            guide you
-            through the best diving spots in Málaga, the Costa del Sol and Andalucía,.</p>
+          <h1 class="title">AbySub Escuela de Buceo</h1>
+          <p>En AbySub, escuela de buceo en Fuengirola, te brindamos la posibilidad de conocer el mundo subacuático de
+            forma
+            segura y divertida , en un ambiente cómodo y relajado en donde un instructor PADI certificado os guiará por
+            los
+            mejores lugares de buceo de Málaga, la Costa del Sol y Andalucía.</p>
         </div>
         <div class="col-2">
-          <img id="centroimg" src="./img/fachada.jpg" alt="Diving center front picture">
+          <img id="centroimg" src="./img/fachada.jpg" alt="Foto de la fachada de la escuela de buceo">
         </div>
       </div>
     </section>
 
     <!-- Cursos section-->
     <section id="cursos">
-      <h1 class="title">Courses</h1>
-      <p id="curso-tittle-p">We provide all PADI diving courses, from beginners to instructor level.
+      <h1 class="title">Cursos</h1>
+      <p id="curso-tittle-p">Ofrecemos todos lo cursos de buceo PADI, desde principiantes hasta el nivel de instructor.
       </p>
       <div class="grid-4">
         <div class="col-4">
           <div class="card">
-            <img src="./img/3.jpeg" alt="three underwater divers communicating using hand signs">
-            <h3>Discover Scuba </h3>
-            <p>Do you want to experience something diferent and new? We have exactly what you are looking for. </p>
-            <button class="button-cursos">Read more...</button>
+            <img src="./img/3.jpeg" alt="tres buzos debajo del agua comunicandose con señas">
+            <h3>Bautismo de buceo</h3>
+            <p>Si deseas una experiencia diferente, debes probar la sensación de respirar bajo el agua con total
+              seguridad. </p>
+            <button class="button-cursos">Leer más...</button>
           </div>
         </div>
         <div class="col-4">
-          <div class="card"><img src="./img/4.jpeg" alt="three divers swimming towards colorful corals and fish.">
+          <div class="card"><img src="./img/4.jpeg" alt="tres buzos nadando hacia corales y peces de colores">
             <h3>Padi Scuba Diver</h3>
-            <p>If you have limited time on your holiday then PADI Scuba Diver program is a pre-entry level
-              certification.
-            </p>
-            <button class="button-cursos">Read more...</button>
+            <p>Si tienes tiempo limitado en tus vacaciones este curso es el que estas buscando,el PADI SCUBA DIVER
+              !!!!!! </p>
+            <button class="button-cursos">Leer más...</button>
           </div>
         </div>
         <div class="col-4">
-          <div class="card"><img src="./img/5.jpg" alt="A female diver near a rock with fish underwater.">
+          <div class="card"><img src="./img/5.jpg" alt="una mujer buzo cerca de una roca con peces debajo del agua">
             <h3>Open Water Diver</h3>
-            <p>During the Open Water Course you will learn all the techniques needed to move your body and equipment
-              safely underwater. </p>
-            <button class="button-cursos">Read more...</button>
+            <p>En este curso aprenderás las técnicas necesarias para dominar tu cuerpo y el equipo en el entorno
+              subacuático. </p>
+            <button class="button-cursos">Leer más...</button>
           </div>
         </div>
         <div class="col-4">
           <div class="card"><img src="./img/6.jpg"
-              alt="A female diver taking a photograph of a sea turtle at the bottom of the sea.">
-            <h3>Advance Diver</h3>
-            <p>During this course, you will refine your diving skills and explore new diving adventures such as deep and
-              night diving.</p>
-            <button class="button-cursos">Read more...</button>
+              alt="un buzo mujer sacando una fotografia a una tortuga marina en el fondo del mar">
+            <h3>Buceador avanzado</h3>
+            <p>Ya eres buceador y buscas nuevas experiencias, el buceo profundo y nocturno son parte de ellas. </p>
+            <button class="button-cursos">Leer más...</button>
           </div>
         </div>
       </div>
@@ -115,47 +113,47 @@
 
     <!-- galeria section-->
     <section id="galeria">
-      <h1 class="title">Gallery</h1>
+      <h1 class="title">Galería</h1>
 
       <!-- Slideshow container -->
       <div class="slideshow-container">
 
 
         <div class="mySlides fade">
-          <img class="slide_img" src="./img/gal0.jpg" alt="underwater image" style="width:100%">
+          <img class="slide_img" src="./img/gal0.jpg" alt="imagen submarina" style="width:100%">
         </div>
         <div class="mySlides fade">
-          <img class="slide_img" src="./img/gal1.jpg" alt="underwater image" style="width:100%">
+          <img class="slide_img" src="./img/gal1.jpg" alt="imagen submarina" style="width:100%">
         </div>
         <div class="mySlides fade">
-          <img class="slide_img" src="./img/gal2.jpg" alt="underwater image" style="width:100%">
+          <img class="slide_img" src="./img/gal2.jpg" alt="imagen submarina" style="width:100%">
         </div>
         <div class="mySlides fade">
-          <img class="slide_img" src="./img/gal3.jpg" alt="underwater image" style="width:100%">
+          <img class="slide_img" src="./img/gal3.jpg" alt="imagen submarina" style="width:100%">
         </div>
         <div class="mySlides fade">
-          <img class="slide_img" src="./img/gal4.jpg" alt="underwater image" style="width:100%">
+          <img class="slide_img" src="./img/gal4.jpg" alt="imagen submarina" style="width:100%">
         </div>
         <div class="mySlides fade">
-          <img class="slide_img" src="./img/gal5.jpg" alt="underwater image" style="width:100%">
+          <img class="slide_img" src="./img/gal5.jpg" alt="imagen submarina" style="width:100%">
         </div>
         <div class="mySlides fade">
-          <img class="slide_img" src="./img/gal6.jpg" alt="underwater image" style="width:100%">
+          <img class="slide_img" src="./img/gal6.jpg" alt="imagen submarina" style="width:100%">
         </div>
         <div class="mySlides fade">
-          <img class="slide_img" src="./img/gal7.jpg" alt="underwater image" style="width:100%">
+          <img class="slide_img" src="./img/gal7.jpg" alt="imagen submarina" style="width:100%">
         </div>
         <div class="mySlides fade">
-          <img class="slide_img" src="./img/gal8.jpg" alt="underwater image" style="width:100%">
+          <img class="slide_img" src="./img/gal8.jpg" alt="imagen submarina" style="width:100%">
         </div>
         <div class="mySlides fade">
-          <img class="slide_img" src="./img/gal9.jpg" alt="underwater image" style="width:100%">
+          <img class="slide_img" src="./img/gal9.jpg" alt="imagen submarina" style="width:100%">
         </div>
         <div class="mySlides fade">
-          <img class="slide_img" src="./img/gal10.jpg" alt="underwater image" style="width:100%">
+          <img class="slide_img" src="./img/gal10.jpg" alt="imagen submarina" style="width:100%">
         </div>
         <div class="mySlides fade">
-          <img class="slide_img" src="./img/gal11.jpg" alt="underwater image" style="width:100%">
+          <img class="slide_img" src="./img/gal11.jpg" alt="imagen submarina" style="width:100%">
         </div>
 
 
@@ -185,64 +183,77 @@
       <!-- conservacion section-->
     </section>
     <section id="conservacion">
-      <h1 class="title">Sea preservation</h1>
+      <h1 class="title">Conservación marina</h1>
       <div>
         <div class="grid-conservacion">
           <div class="colu-3">
             <div class="card">
-              <img src="./img/conservacion1.jpg" alt="Sea turtle entangled in fishing nets">
+              <img src="./img/conservacion1.jpg" alt="tortuga marina enredada en redes de pesca">
             </div>
           </div>
           <div class="colu-3">
             <div class="card"><img src="./img/conservacion2.jpg"
-                alt="Diver coming out of the sea with fishing nets in hand">
+                alt="buzo saliendo del mar con redes de pesca en la mano">
             </div>
           </div>
           <div class="colu-3">
-            <div class="card"><img src="./img/conservacion3.jpg" alt="Garbage collected from the sea">
+            <div class="card"><img src="./img/conservacion3.jpg" alt="basura recogida del mar">
             </div>
           </div>
         </div>
       </div>
       <div>
-        <p>The marine preservation is a fundamental aspect in the diving world. Diving into the depths of the ocean
-          provides us not
-          only with an amazing experience but also with the responsibility to protect these vulnerable and precious
-          ecosystems.<span id="dots">...<br></span><span id="more">
-            <br>Diving connects us directly to the beauty and fragility of the oceans. <br><br>As we explore these
-            underwater
-            environments, we become privileged witnesses of marine life in its most natural state. It's essential to
-            recognize the
-            importance of preserving these underwater habitats, home to countless species and vital contributors to the
-            health of
-            our planet.<br><br>
-            As divers, we have the opportunity and responsibility to be guardians of the oceans. Our actions and
-            behaviors have a
-            direct impact on marine conservation.<br><br>From practicing responsible and ethical diving to educating and
-            raising awareness about the environmental issues our
-            seas face, every step counts. Marine conservation in diving involves not only enjoying the beauty of the
-            ocean but also
-            protecting it for future generations. <br><br>Adopting sustainable practices, avoiding harm to coral reefs,
-            and respecting marine life are just a few ways divers can
-            contribute to preserving these fragile ecosystems. <br><br>
-
-            Together, as a community of diving enthusiasts, we hold the power to make a difference. By uniting to
-            protect and
-            conserve our oceans, we ensure that these extraordinary aquatic environments remain a treasure to be enjoyed
-            and admired
-            for generations to come. <br><br>
-
-            Marine conservation isn't merely a choice; it's a responsibility that all divers can and should embrace.
+        <p>La conservación marina es un aspecto fundamental en el mundo del buceo. Sumergirse en las profundidades del
+          océano nos
+          brinda no solo una experiencia asombrosa, sino también la responsabilidad de proteger estos ecosistemas
+          vulnerables y
+          preciosos.<span id="dots">...<br></span><span id="mas">
+            <br>El buceo nos conecta directamente con la belleza y fragilidad de los océanos. <br><br>A medida que
+            exploramos
+            estos
+            ambientes
+            submarinos, nos convertimos en testigos privilegiados de la vida marina en su estado más natural. Es
+            esencial
+            reconocer
+            la importancia de preservar estos hábitats submarinos, hogar de innumerables especies y contribuyentes
+            vitales
+            para la
+            salud de nuestro planeta. <br><br>
+            Como buceadores, tenemos la oportunidad y la responsabilidad de ser guardianes de los océanos. Nuestras
+            acciones y
+            comportamientos tienen un impacto directo en la conservación marina. <br><br>Desde practicar buceo
+            responsable
+            y
+            ético
+            hasta
+            educar y crear conciencia sobre los problemas ambientales que enfrentan nuestros mares, cada paso cuenta.
+            La conservación marina en el buceo implica no solo disfrutar de la belleza del océano, sino también
+            protegerlo
+            para las
+            generaciones futuras. <br><br>Adoptar prácticas sostenibles, evitar dañar los arrecifes de coral y respetar
+            la
+            vida
+            marina son
+            solo algunas formas en que los buceadores pueden contribuir a la preservación de estos ecosistemas
+            frágiles.<br><br>
+            Juntos, como una comunidad de amantes del buceo, tenemos el poder de marcar la diferencia. Al unirnos para
+            proteger y
+            conservar nuestros océanos, garantizamos que estos extraordinarios entornos acuáticos sigan siendo un tesoro
+            para
+            disfrutar y admirar para las generaciones venideras. <br><br>La conservación marina no solo es una elección,
+            es
+            una
+            responsabilidad que todos los buceadores pueden y deben abrazar.
           </span></p>
 
-        <button onclick="toggleReadMoreEnglish()" id="myBtn">Read more</button>
+        <button onclick="toggleReadMoreSpanish()" id="myBtn">Leer más</button>
       </div>
     </section>
 
     <footer>
       <div class="grid-3d">
         <div class="col-4">
-          <h3 id="footer-contacto">Follow us </h3>
+          <h3 id="footer-contacto">Sígueme en redes: </h3>
           <a href="whatsapp://send?phone=34657644906" target="_blank"><i class="fa fa-whatsapp"
               aria-hidden="true"></i></a>
           <!-- <a href="https://api.whatsapp.com/send?phone=34657644906" target="_blank"><i class="fa fa-whatsapp"
@@ -255,12 +266,12 @@
           <a href="https://www.instagram.com/abysubdiving/?hl=es" target="_blank">
             <i class="fa fa-instagram" aria-hidden="true"></i>
           </a>
-          <h3>Official website</h3>
+          <h3>Sitio oficial</h3>
           <a id="sitio-oficial" href="https://www.abysub.com/" target="_blank">AbySub</a>
           <!-- Trigger/Open The Modal -->
           <div id="modal-section">
 
-            <button id="myBtnModal">Contributions</button>
+            <button id="myBtnModal">Atribuciones</button>
 
             <!-- The Modal -->
             <div id="myModal" class="modal">

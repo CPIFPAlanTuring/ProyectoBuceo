@@ -117,25 +117,39 @@ margin-bottom: 0%;
       padding-top: 3%;
       
 }
-#hero button {background-color:#0BACD0;
-  font-family: embolism;
-            color:white;
-            font-size: 1.8em;
-            
-            padding:15px ;
-            border: 2px solid white;
-            border-radius: 15px;
-            position:absolute;    /******* contenido absoluto ******/
-            top:35%;
-            left:50%;
-            transform:translate(-50%,-50%); /*** lo traslado a la mitad de su tamaño **/ 
+.button-container {
+  display: flex;
+  justify-content: center; /* Centra los botones horizontalmente */
+   margin-top: 90px;
 }
-#hero button:hover {
-      background-color: white;
-      color: #0BACD0;
-      border: 1px solid white;
-      
 
+#button-bucea,
+#button-dive {
+  margin: 0 5px; /* Espacio entre los botones */
+  margin-top: 10px; /* Margen superior para ajustar la posición vertical */
+}
+
+
+
+#button-bucea button,
+#button-dive button {
+  /* Estilos comunes para ambos botones */
+  background-color: #0BACD0;
+  font-family: embolism;
+  color: white;
+  font-size: 1.8em;
+  padding: 15px;
+  border: 2px solid white;
+  border-radius: 15px;
+
+}
+
+#button-bucea button:hover,
+#button-dive button:hover {
+  /* Estilos al pasar el ratón por encima */
+  background-color: white;
+  color: #0BACD0;
+  border: 1px solid white;
 }
 
 #bubbles{
@@ -379,6 +393,7 @@ h1{color: #023b54;
 
 
 #mas {display: none;}
+#more {display: none;}
 
  #conservacion {color: white;
       font-family: garamond;
