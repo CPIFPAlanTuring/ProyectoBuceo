@@ -371,6 +371,10 @@ h1{color: #023b54;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Usar fracciones flexibles para las columnas */
   gap: 5px; /* Espacio entre las tarjetas */
+  
+}
+.colu-3{
+    margin: 3%;
 }
 
 
