@@ -273,6 +273,11 @@ nav {
 
 .card p {
   font-size: 1em;
+  
+  text-align:start; /* Centrar el texto */
+  padding: 0 10px; /* Agregar un relleno izquierdo y derecho */
+  margin: 0; /* Eliminar el margen predeterminado */
+
 }
 
 .button-cursos{

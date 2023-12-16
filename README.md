@@ -33,7 +33,7 @@
 <h3>Hero Section</h3>
 <img src="./img/readme/herosection.png" alt="imagen de hero section" style="width:50%">
 <p>He utilizado una imagen de fondo tomada de FreePik que se adapta fácilmente a diferentes dispositivos<br>
-Sobre ella he colocado dos Call to Action, uno que te lleva a todas las secciones de la pagina en Ingles y otro que te lleva directamente a la seccion nosotros de la pagina en español</p>
+Sobre ella he colocado dos Call to Action, uno que te lleva a todas las secciones de la pagina en Ingles y otro que te lleva directamente a la seccion nosotros de la pagina en español.</p>
 
 <h3>About Us</h3>
 <img src="./img/readme/AboutUsSection.png" alt="imagen de About Us section" style="width:50%">
@@ -65,4 +65,11 @@ Sobre ella he colocado dos Call to Action, uno que te lleva a todas las seccione
 <p>He añadido un sonido del ruido que se escucha cuando uno esta buceando, que suena solo cuando se pase el ratón sobre la HeroSection </p>
 <h2 id="snippets">Code snippets</h2>
 <p>He utilizado code snippets obtenidos de la seccion -how to- de W3Schools</p>
+<ul>
+<li> Responsive Topnav</li>
+<li> Menu Icon</li>
+<li> Read More Read Less Button</li>
+<li> Slideshow</li>
+<li> CSS/JS Modal</li>
+</ul>
 
