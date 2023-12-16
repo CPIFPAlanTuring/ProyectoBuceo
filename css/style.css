@@ -45,8 +45,8 @@ html{scroll-behavior: smooth;}/*esto suaviza todos las bajadas de scroll*/
  h1{
       color: white;
       font-family: aima;
-      font-weight: bolder;
-      font-size: 2em;
+      
+      font-size: 1.8em;
       text-align: center;
       padding-top: 3%;
 }
@@ -166,7 +166,7 @@ left: 5%;
       color: #023b54;
       font-family: aima;
       font-weight: bolder;
-      font-size: 2em;
+      font-size: 1.8em;
       text-align: center;
 }
 #centro p {
@@ -190,6 +190,10 @@ border-radius: 20px;
 #cursos h1{
   color: white;
   padding-bottom: 0;
+  font-family: aima;
+  font-size: 1.8em;
+  text-align: center;
+  
 }
 #cursos h3{
   font-family: garamonb;
@@ -276,6 +280,9 @@ border-radius: 20px;
   margin: auto;
 }
 h1{color: #023b54;
+  font-family: aima;
+  font-size: 1.8em;
+  text-align: center;
   
   
 }
@@ -360,6 +367,13 @@ h1{color: #023b54;
 
  /***********************Conservacion section******************/
 
+.grid-conservacion {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Usar fracciones flexibles para las columnas */
+  gap: 5px; /* Espacio entre las tarjetas */
+}
+
+
 #mas {display: none;}
 
  #conservacion {color: white;
@@ -376,6 +390,9 @@ margin-bottom: 3%;
 #conservacion h1{
   color: white;
   padding-bottom: 0;
+  font-family: aima;
+  font-size: 1.7em;
+  text-align: center;
 }
 #conservacion h3{
   font-family: garamonb;
@@ -393,29 +410,6 @@ margin-bottom: 3%;
       align-self: flex-end; /* Coloca el botón al final de la tarjeta */
       margin-top: auto; /* Asegura que el botón esté pegado al final, sin importar la cantidad de contenido */
       }   
-
-/*#cursos .container {
-  position: relative;
-  overflow: hidden; 
-  width: 100%;
-}
-#cursos p{
-  
-      padding: 2% 5%;
-      font-family: garamond;
-}
-#curso-tittle-p{
-  
-      font-size: 1.5em;
-      color: white;
-      font-family:garamond;
-      font-weight: bolder;
-      text-align: justify;
-      line-height: 1.5;
-      padding: 2% 5%; 
-}*/
-
-
 
 
 /* Ajustar grid o flexbox para la disposición de las tarjetas */
