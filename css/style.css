@@ -26,7 +26,7 @@ body {margin-right:0.5%;padding:0;   /* para desactivar el espacio de separació
           width:100%;        /* ancho fijado al 100%  MOBILE FIRST */
           
           margin: auto ;    /* centrado automático */
-          margin-right: 0.5%;
+          /* margin-right: 0.5%; */
 }
 html{scroll-behavior: smooth;}/*esto suaviza todos las bajadas de scroll*/
 
@@ -264,9 +264,9 @@ border-radius: 5%;} */
 .slide_img{
   border: 3px solid white;
   border-radius: 20px;
-  margin-left: 2%;
+ /* margin-left: 2%;
   margin-right: 10%;
-  max-width: 95%;
+  max-width: 95%;*/
 }
 /* Next & previous buttons */
 .prev, .next {
