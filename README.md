@@ -1,7 +1,7 @@
 # ProyectoBuceo
  <h1>Memoria del proyecto de la primera de evaluación de Lenguajes de Marcas -  </h1>
  <h2> 1ero DAW 2023/24 Alan Turing, Málaga</h2>
-<h2>Black Mirror - A tribute site</h2>
+<h2>Proyecto sobre buceo</h2>
 <h2>Indice</h2>
 <ul>
   <li><a href="#introduccion">Introducción</a></li>
