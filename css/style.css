@@ -18,12 +18,13 @@
 
 * {box-sizing:border-box;}   /* con maquetación compleja SIEMPRE */
 
-body {margin-right:0.5%;padding:0;   /* para desactivar el espacio de separación por defecto */
-      background-color: #05D1D8;
+body {margin:0;   /* para desactivar el espacio de separación por defecto */
+  padding: 0;    
+  background-color: #05D1D8;
       font-family: garamondb;}
 
 #wrapper {background-color:#05D1D8;
-          width:100%;        /* ancho fijado al 100%  MOBILE FIRST */
+          width:98%;        /* ancho fijado al 100%  MOBILE FIRST */
           
           margin: auto ;    /* centrado automático */
           /* margin-right: 0.5%; */
@@ -50,6 +51,7 @@ margin-bottom: 0%;
 .topnav {
   background-color: #05D1D8;
   overflow: hidden;
+  opacity: 0.9;
 }
 
 /* Style the links inside the navigation bar */
@@ -81,6 +83,7 @@ margin-bottom: 0%;
 
 #hero {background-image: url(../img/paisaje-submarino1.jpg);
       height:95vh;    /* el 100% del alto de la ventana del navegador */ 
+      
       background-size: cover;
       background-position:center;
       text-align: center;
@@ -449,7 +452,7 @@ footer a p:hover {
      }
 /********responsive topnav de w3schools ***********/
  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 912px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -458,7 +461,7 @@ footer a p:hover {
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 912px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
@@ -471,3 +474,6 @@ footer a p:hover {
     text-align: left;
   }
 }
+
+
+
