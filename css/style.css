@@ -468,7 +468,7 @@ footer {
 
 .grid-3d {
   display:grid;
-  grid-template-columns: 33% 33% 33%; 
+  grid-template-columns: auto auto; 
 }
 
 .col-4 {
@@ -546,6 +546,11 @@ footer a p:hover {
   padding-left: 10px;
   transition: 1s;
 }
+
+
+
+
+
 
 /***modal window****/
  /* The Modal (background) */
